@@ -2,9 +2,9 @@
 Made By corcle1 (omlet : kdg7313) (github : kdg7313)
 */
 
-const chat = "long chat cut"
+const chat = "chatcut"
 
-import "./long chat cut" //import
+import "./chatcut" //import
 
 console.log(`${chat} Load`)
 
