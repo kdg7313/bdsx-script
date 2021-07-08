@@ -1,3 +1,6 @@
+/*
+Made By corcle1 (omlet : kdg7313) (github : kdg7313)
+*/
 import { chat, CANCEL } from "bdsx";
 const system = server.registerSystem(0, 0);
 
