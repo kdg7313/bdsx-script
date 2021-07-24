@@ -28,4 +28,3 @@ events.packetBefore(MinecraftPacketIds.Text).on(ev => {
       return CANCEL; 
    }
 });
-
