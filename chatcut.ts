@@ -1,12 +1,16 @@
 /*
 Made By corcle1 (omlet : kdg7313) (github : kdg7313)
 */
-import { chat, CANCEL } from "bdsx";
-const system = server.registerSystem(0, 0);
+
+import { MinecraftPacketIds } from "../bdsx/bds/packetids";
+import { CANCEL } from "../bdsx/common";
+import { events } from "../bdsx/event";
 
 let time : any = {}
 
-chat.on(ev => {
+const system = server.registerSystem(0, 0);
+
+events.packetBefore(MinecraftPacketIds.Text).on(ev => {
    if(time[ev.name] === undefined){
       time[ev.name] = new Date()
    }
